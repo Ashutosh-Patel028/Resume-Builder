@@ -1,8 +1,8 @@
-import React, { Fragment } from "react";
+import React from "react";
 
 function Months() {
   return (
-    <Fragment>
+    <React.Fragment>
       <option value="">Month</option>
       <option value="January">January</option>
       <option value="February">February</option>
@@ -16,7 +16,7 @@ function Months() {
       <option value="October">October</option>
       <option value="November">November</option>
       <option value="December">December</option>
-    </Fragment>
+    </React.Fragment>
   );
 }
 

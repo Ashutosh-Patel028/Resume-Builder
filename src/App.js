@@ -1,16 +1,27 @@
 import React from "react";
 import ReactDOM from "react-dom/client"
 import Navigation from "./components/Navigation";
-import About from "./components/About";
-import Profile from "./components/Profile"
+import {Routes,Route} from "react-router-dom";
+import Container from 'react-bootstrap/Container';
+import Footer from './components/Footer';
+import Resume from './components/Resume';
+import PdfComponent from './components/PdfComponent';
+import "./App.css";
 
 const App = () =>{
     return (
-        <React.Fragment>
-            <Navigation/>
-            This is react-app
-            <button className="btn btn-primary">home</button>
-        </React.Fragment>
+        <Container fluid className="bg-white p-0">
+
+        <Navigation></Navigation>
+  
+        <Routes>
+          <Route path="/" element={ <Resume/> } exact></Route>
+          <Route path="/preview" element={<PdfComponent/>}></Route>
+        </Routes>
+        
+        <Footer></Footer>
+        
+      </Container>
     )
 }
 
