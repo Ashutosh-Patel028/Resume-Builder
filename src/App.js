@@ -1,10 +1,15 @@
+import React from "react";
 import ReactDOM from "react-dom/client"
+import Navigation from "./components/Navigation";
+
 
 const App = () =>{
     return (
-        <div>
+        <React.Fragment>
+            <Navigation/>
             This is react-app
-        </div>
+            <button className="btn btn-primary">home</button>
+        </React.Fragment>
     )
 }
 
