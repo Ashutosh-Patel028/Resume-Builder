@@ -133,3 +133,5 @@ function Profile(){
         </React.Fragment>
     )
 }
+
+export default Profile;

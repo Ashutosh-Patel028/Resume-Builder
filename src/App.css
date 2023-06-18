@@ -31,8 +31,8 @@ body {
 }
 /* ============================== */
 .top-image {
-  min-height: 150px;
-  background-image: url("../public/images/background-1.jpg");
+  min-height: 200px;
+  background-image: url("../public/images/bg-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

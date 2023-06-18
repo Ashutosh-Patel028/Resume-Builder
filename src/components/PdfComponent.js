@@ -46,7 +46,7 @@ function PdfComponent() {
         const pdf = new jsPDF('p', 'pt', 'a4', false);
         pdf.addImage(imgData, 'PNG', 0, 0, 600, 0, undefined, false);
         // pdf.output('dataurlnewwindow');
-        pdf.save("download.pdf");
+        pdf.save("resume-download.pdf");
       })
     ;
   };
@@ -134,7 +134,6 @@ function PdfComponent() {
                 <p>{profile.tagline}</p>
                   <p className="m-0"><HiOfficeBuilding size={20}/> {profile.position}</p>
                   <p><HiLocationMarker size={20}/> {profile.location}</p>
-                
               </Stack>
               <br></br>
               <GetLinks/>
@@ -217,4 +216,4 @@ function PdfComponent() {
   )
 }
 
-export default PdfComponent
+export default PdfComponent;
