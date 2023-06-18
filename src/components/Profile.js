@@ -1,6 +1,14 @@
-import React from "react"
+import React,{useState} from "react";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import {MdEdit, MdClose} from 'react-icons/md';
+import {HiLocationMarker,HiOfficeBuilding,HiOutlineMail,HiPhone} from 'react-icons/hi';
+import { BsGithub, BsLinkedin, BsGlobe} from 'react-icons/bs';
+import Modal from 'react-bootstrap/Modal';
+import Form from 'react-bootstrap/Form';
+import { useSelector, useDispatch } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { actionCreators } from '../redux/index';
 
 function Profile(){
     const profile = useSelector(state => state.profile)
