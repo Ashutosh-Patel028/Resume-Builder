@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client"
 import Navigation from "./components/Navigation";
-
+import About from "./components/About";
+import Profile from "./components/Profile"
 
 const App = () =>{
     return (
